@@ -1,0 +1,53 @@
+{
+  "name": "raito-react-spawn",
+  "version": "1.0.0",
+  "description": "A mysterious React starter kit",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "lint": "eslint . --ext .js --ext .js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RaitoBezarius/react-spawn.git"
+  },
+  "keywords": [
+    "starter",
+    "kit",
+    "react",
+    "op"
+  ],
+  "author": "Ryan Lahfa <masterancpp@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RaitoBezarius/react-spawn/issues"
+  },
+  "homepage": "https://github.com/RaitoBezarius/react-spawn#readme",
+  "devDependencies": {
+    "babel": "^5.8.23",
+    "babel-core": "^5.8.23",
+    "babel-eslint": "^4.1.1",
+    "babel-loader": "^5.3.2",
+    "css-loader": "^0.17.0",
+    "eslint": "^1.3.1",
+    "eslint-loader": "^1.0.0",
+    "eslint-plugin-react": "^3.3.1",
+    "express": "^4.13.3",
+    "file-loader": "^0.8.4",
+    "http-proxy": "^1.11.2",
+    "json-loader": "^0.5.2",
+    "path": "^0.11.14",
+    "react-hot-loader": "^1.3.0",
+    "style-loader": "^0.12.3",
+    "url-loader": "^0.5.6",
+    "webpack": "^1.12.1",
+    "webpack-dev-server": "^1.10.1"
+  },
+  "dependencies": {
+    "alt": "^0.17.3",
+    "autobahn": "^0.9.6",
+    "react": "^0.13.3",
+    "react-router": "^0.13.3"
+  }
+}
