@@ -4,6 +4,9 @@ My React Starter Kit, a strange mix of React, JSX, ES7 (Babel), ESLint, React-Ho
 But, if you're crazy like me, let's put that in production :)!
 Awesome stack makes awesome app!
 
+To install the deps, just npm install.
+To start the server, just npm start.
+
 ## Composition of all this starter kit (without gluten):
 
 * React.
