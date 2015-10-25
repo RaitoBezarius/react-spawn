@@ -17,11 +17,11 @@ To start the server, just npm start.
 * [Alt](http://alt.js.org/), simple, terse, expressive.
 * [AutobahnJS](http://autobahn.ws/js/), if this is the first time you hear about [WAMP](http://wamp.ws/), you should definitely try. Adieu REST API!
 * [Webpack](https://github.com/webpack/webpack) because it's simply awesome. All hail Webpack (and GitHub).
+* [PostCSS](https://github.com/postcss/postcss-loader) because PostCSS really makes CSS enjoyable!
 
 ## TODO:
 
 * Tests ? Let's go for Karma, I suppose !
-* CSS ? PostCSS ? SASS ? LESS ? Stylus ? I can't decide!
 * Production config for Webpack, it's a paaaaaaaaaaaaaaaaaain
 * NPM scripts for some tasks automation
 * Some boilerplate for browser support
