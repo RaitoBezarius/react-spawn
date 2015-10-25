@@ -18,14 +18,15 @@ To start the server, just npm start.
 * [AutobahnJS](http://autobahn.ws/js/), if this is the first time you hear about [WAMP](http://wamp.ws/), you should definitely try. Adieu REST API!
 * [Webpack](https://github.com/webpack/webpack) because it's simply awesome. All hail Webpack (and GitHub).
 * [PostCSS](https://github.com/postcss/postcss-loader) because PostCSS really makes CSS enjoyable!
+* [Karma](https://github.com/karma-runner/karma) because I believe that my tests will pass when I have KARMA (without using _Volkswagen_ techniques).
+* [Mocha](https://github.com/mochajs/mocha) because it is a pretty awesome framework in my opinion.
+* [Expect](https://github.com/mjackson/expect) because I want to become a better writer in the assertion field.
+* [Lodash](https://github.com/lodash/lodash) because I want to ship "consistency, modularity, performance, & extras" especially when I do Netscape's JavaScript.
+* [Autoprefixer](https://github.com/postcss/autoprefixer) because you would not write CSS with a "Can I Use" table. You love automation.
 
 ## TODO:
 
-* Tests ? Let's go for Karma, I suppose !
-* Some boilerplate for browser support
-* Lodash integration
-* Bootstrap ???? Foundation ??? Let's roll our proper full React UI !
-* Immutability ? Worth it ? Definitely.
+* Babel polyfills, Babel runtime and others things that are related to Browser support.
 
 ## How to contribute
 Just pull request this repo!
