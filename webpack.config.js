@@ -28,6 +28,9 @@ var config = {
   eslint: {
     configFile: '.eslintrc'
   },
+  postcss: function () {
+    return [require('autoprefixer')];
+  },
 	module: {
     preLoaders: [
       {
@@ -55,6 +58,10 @@ var config = {
       {
         test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
         loader: "file-loader"
+      },
+      {
+        test: /\.css$/,
+        loader: 'style-loader!css-loader!postcss-loader'
       },
       {
         test: /\.png$/,
