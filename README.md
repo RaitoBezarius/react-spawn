@@ -22,8 +22,6 @@ To start the server, just npm start.
 ## TODO:
 
 * Tests ? Let's go for Karma, I suppose !
-* Production config for Webpack, it's a paaaaaaaaaaaaaaaaaain
-* NPM scripts for some tasks automation
 * Some boilerplate for browser support
 * Lodash integration
 * Bootstrap ???? Foundation ??? Let's roll our proper full React UI !
