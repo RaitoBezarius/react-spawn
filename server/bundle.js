@@ -24,7 +24,7 @@ module.exports = function() {
         // We serve the app from the build path.
         // It makes the proxying simpler:
         // http://localhost:8090/build -> http://localhost:8085/build
-        publicPath: '/build/',
+        publicPath: '/public/',
 
         // Configure hot replacement
         hot: true,

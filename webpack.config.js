@@ -2,15 +2,14 @@ var Webpack = require('webpack');
 var path = require('path');
 
 var nodeModulesPath = path.join(__dirname, 'node_modules');
-var buildPath = path.join(__dirname, 'build');
+var buildPath = path.join(__dirname, 'public');
 var mainPath = path.join(__dirname, 'src', 'app.js');
 var mainModulesPath = path.join(__dirname, 'src');
 
 var config = {
   devtool: 'eval',
-	entry: [
+  entry: [
     'webpack-dev-server/client?http://localhost:8090',
-    'webpack/hot/dev-server',
     mainPath
   ],
   output: {
@@ -18,20 +17,20 @@ var config = {
     publicPath: '/public/',
     filename: 'bundle.js'
   },
-	plugins: [
+  plugins: [
     new Webpack.HotModuleReplacementPlugin()
-	],
-	resolve: {
-		root: mainModulesPath,
+  ],
+  resolve: {
+    root: mainModulesPath,
     extensions: ['', '.js', '.jsx']
-	},
+  },
   eslint: {
     configFile: '.eslintrc'
   },
   postcss: function () {
     return [require('autoprefixer')];
   },
-	module: {
+  module: {
     preLoaders: [
       {
         test: /\.jsx?$/,
@@ -40,16 +39,16 @@ var config = {
         loader: 'eslint-loader'
       }
     ],
-		loaders: [
-			{
+    loaders: [
+      {
         test: /\.json$/,
         loader: "json-loader"
       },
-			{
+      {
         test: /\.jsx?$/,
         exclude: [nodeModulesPath],
         include: [mainModulesPath],
-        loaders: ['react-hot', 'babel-loader?stage=0&cacheDirectory']
+        loader: 'babel-loader'
       },
       {
         test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
@@ -71,8 +70,8 @@ var config = {
         test: /\.jpg$/,
         loader: 'file-loader'
       },
-		],
-	},
+    ],
+  },
 };
 
 module.exports = config;

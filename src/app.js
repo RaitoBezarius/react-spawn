@@ -1,10 +1,13 @@
 import React from 'react';
-import Router from 'core/Router';
+import {render} from 'react-dom';
+import {Router} from 'react-router';
+import Routes from 'routes';
+import createHashHistory from 'history/lib/createHashHistory';
 
-function runApplication() {
-	Router.run(Root => {
-		React.render(<Root />, document.body);
-	});
-}
+const history = createHashHistory();
 
-runApplication();
+render(
+  <Router
+    routes={Routes}
+    history={history}
+  />, document.getElementById('spa-app'));
